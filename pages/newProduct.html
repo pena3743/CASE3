@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js" defer></script>
-    <!-- <script src="/data.js" defer></script> -->
     <script src="../main.js" defer></script>
 </head>
 <body>
     <h1>Crear producto</h1>
-      <div class="container">
+    <div class="container w-50">
         <form id="create-product">
             <div class="mb-3">
             <label for="cre-code" class="form-label fs-5">Código</label>
-            <input type="text" class="form-control" id="cre-code">
+            <input type="text" class="form-control" id="cre-code" required>
             </div>
             <div class="mb-3">
             <label for="cre-desc" class="form-label fs-5">Descripción</label>
@@ -34,8 +33,8 @@
             </div>
             <button type="submit" class="btn btn-primary" id="cre-btn">Crear</button>
         </form>
+        <div class="cre-info"></div>
     </div>
-    <p class="cre-info"></p>
 </body>
 <footer>
     <nav class="container">    
